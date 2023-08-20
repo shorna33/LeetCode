@@ -1,16 +1,12 @@
-
-#
-#                     NOT SOLVED
-#
-
-
-x = 16
+x = 7
 if x == 0:
     print('0')
     exit()
-first, last = 1, x
+first = 1
+last = x
 while first <= last:
-    mid = first + (last - first) / 2
+    mid = first + round((last - first) / 2)
+    print(mid)
     if (mid * mid) == x:
         print(mid)
         exit()
